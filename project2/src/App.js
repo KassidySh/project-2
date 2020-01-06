@@ -1,8 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
+  fetch('https://www.superheroapi.com/api.php/3224575430950372/1')
+      .then(response => response.json())
+      .then(data => {
+        console.log(data)
+       
+      }
+      )
+      .catch(err => {
+        console.error({err})
+      })
+  
+
   return (
     <div className="App">
       <h1>Header is working</h1>
