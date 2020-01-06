@@ -46,7 +46,9 @@ Chang the Opacity at the top to be closer to white or nav bar has color of white
 **Wireframes**
 
 [Main Page](https://res.cloudinary.com/dt5zs08ue/image/upload/v1578281708/GA%20project%202/wireframes_mockups_mfoyat.png)
+
 [Hero Page](https://res.cloudinary.com/dt5zs08ue/image/upload/v1578319410/GA%20project%202/wireframes_mockups_1_etblon.png)
+
 [React Architecture](https://res.cloudinary.com/dt5zs08ue/image/upload/v1578319841/GA%20project%202/Untitled_2_jsp6ku.png)
 
 **MVP**
