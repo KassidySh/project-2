@@ -1,5 +1,5 @@
 **Project Overview**
-
+-----------------------
 **Project Description**
 
 I would like to make a super hero website. I might use bootstrap for styling.
@@ -7,45 +7,57 @@ I would like to make a super hero website. I might use bootstrap for styling.
 **Possible Problems**
 
 PROBLEM:
+
 I'm not sure I can call multiple items with this array
 
 SOLUTION:
+
 I can run a for loop to get 20 items per page
 
 
 PROBLEM:
+
 The css layout might change in between pages
 
 SOLUTION:
+
 If the index is greater than 19 subtract 20 and set it as the id
 
 
 PROBLEM:
+
 Picture might be sideways
 
 SOLUTION:
+
 Rotate the Picture
 
 
 PROBLEM:
+
 I'm TERRIBLE at Link and Route
 
 SOLUTION:
+
 Use a library or go to office hours
 
 
 PROBLEM:
+
 pictures might not look good stretched across the header
 
 SOLUTION:
+
 I can Tile them or put three instead of one
 
 
 PROBLEM:
+
 Background image(header) might be too dark or too light if picture changes
 
 SOLUTION:
-Chang the Opacity at the top to be closer to white or nav bar has color of white and opacity
+
+Change the Opacity at the top to be closer to white or nav bar has color of white and opacity of .5
 
 
 
@@ -110,7 +122,8 @@ Link and Route for manageing pages
 
 **Code Snippet**
 
-```  fetch('https://www.superheroapi.com/api.php/3224575430950372/1')
+```  
+fetch('https://www.superheroapi.com/api.php/3224575430950372/1')
       .then(response => response.json())
       .then(data => {
         console.log(data)
