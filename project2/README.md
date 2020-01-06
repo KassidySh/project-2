@@ -1,4 +1,4 @@
-**Project Overview**
+    **Project Overview**
 
 **Project Description**
 
@@ -12,34 +12,34 @@ I'm not sure I can call multiple items with this array
 SOLUTION:
 I can run a for loop to get 20 items per page
 
-Problem:
+PROBLEM:
 The css layout might change in between pages
 
-Solution:
+SOLUTION:
 If the index is greater than 19 subtract 20 and set it as the id
 
-Problem:
+PROBLEM:
 Picture might be sideways
 
-Solution:
+SOLUTION:
 Rotate the Picture
 
-Problem:
+PROBLEM:
 I'm TERRIBLE at Link and Route
 
-Solution:
+SOLUTION:
 Use a library or go to office hours
 
-Problem:
+PROBLEM:
 pictures might not look good stretched across the header
 
-Solution:
+SOLUTION:
 I can Tile them or put three instead of one
 
-Problem:
+PROBLEM:
 Background image(header) might be too dark or too light if picture changes
 
-Solution:
+SOLUTION:
 Chang the Opacity at the top to be closer to white or nav bar has color of white and opacity
 
 
