@@ -8,31 +8,37 @@ I would like to make a super hero website. I might use bootstrap for styling.
 
 PROBLEM:
 I'm not sure I can call multiple items with this array
+
 SOLUTION:
 I can run a for loop to get 20 items per page
 
 Problem:
 The css layout might change in between pages
+
 Solution:
 If the index is greater than 19 subtract 20 and set it as the id
 
 Problem:
 Picture might be sideways
+
 Solution:
 Rotate the Picture
 
 Problem:
 I'm TERRIBLE at Link and Route
+
 Solution:
 Use a library or go to office hours
 
 Problem:
 pictures might not look good stretched across the header
+
 Solution:
 I can Tile them or put three instead of one
 
 Problem:
 Background image(header) might be too dark or too light if picture changes
+
 Solution:
 Chang the Opacity at the top to be closer to white or nav bar has color of white and opacity
 
