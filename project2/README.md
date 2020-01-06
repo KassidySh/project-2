@@ -34,4 +34,11 @@ Link and Route for manageing pages
 
 |Component   | Priority | Estimated Time| Time Invested | Actual Time|
 | :---:      | :---:    | :---:         | :---:         | :---:      |
+|Create components | 1 | .5| :---:         | :---:      |
+|App         | 1 | Estimated Time| :---:         | :---:      |
+|App         | 1 | Estimated Time| :---:         | :---:      |
+|App         | 1 | Estimated Time| :---:         | :---:      |
+|App         | 1 | Estimated Time| :---:         | :---:      |
+|App         | 1 | Estimated Time| :---:         | :---:      |
+|App         | 1 | Estimated Time| :---:         | :---:      |
 |App         | 1 | Estimated Time| :---:         | :---:      |
