@@ -34,11 +34,20 @@ Link and Route for manageing pages
 
 |Component   | Priority | Estimated Time| Time Invested | Actual Time|
 | :---:      | :---:    | :---:         | :---:         | :---:      |
-|Create components | 1 | .5| :---:         | :---:      |
-|App         | 1 | Estimated Time| :---:         | :---:      |
-|App         | 1 | Estimated Time| :---:         | :---:      |
-|App         | 1 | Estimated Time| :---:         | :---:      |
-|App         | 1 | Estimated Time| :---:         | :---:      |
-|App         | 1 | Estimated Time| :---:         | :---:      |
-|App         | 1 | Estimated Time| :---:         | :---:      |
-|App         | 1 | Estimated Time| :---:         | :---:      |
+|Create components | 1 | .5 (hrs)| :---:         | :---:      |
+|API call | 1 | 1 (hr)| :---:         | :---:      |
+|Render 1 recipe| 1 | 2 (hrs)| :---:         | :---:      |
+|Display recipes| 1 | .5 (hr)| :---:         | :---:      |
+|Previous Button| 1 | .5 (hr) :---:         | :---:      |
+|Next Button| 1 | .5 (hr)| :---:         | :---:      |
+|Display Page #| 1 | 1 (hr)| :---:         | :---:      |
+|Search function| 1 | 5 (hrs)| :---:         | :---:      |
+|Deployed| 1 | .5 (hr)| :---:         | :---:      |
+|Styled | 1 | 8 (hrs)| :---:         | :---:      |
+|Changing header image| 2 | 3 (hrs)| :---:         | :---:      |
+|Add Local Storage| 2 | 3 (hrs)| :---:         | :---:      |
+|Link and Route| 2 | 4 (hrs)| :---:         | :---:      |
+|Add to favorites button| 3 | 2 (hrs)| :---:         | :---:      |
+|favorites button (home)| 3 | 3 (hrs)| :---:         | :---:      |
+|Display favorites| 3 | 3 (hrs)| :---:         | :---:      |
+|show 1 favorite recipe| 3 | 3 (hrs)| :---:         | :---:      |
