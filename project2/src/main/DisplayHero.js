@@ -6,12 +6,13 @@ import './SingleHero.css'
 function DisplayHero(props) {
     let image = props.imgUrl
     let name = props.superBeing.name
-    console.log(props.ind)
+    let id = props.superBeing.id
+    // console.log(props)
     return (
         <>
             <Link to='/Hero:name'>
                 <div className='superSingle'
-                    key={props.ind}
+                    key={id}
                     //onCLick get key and assign it to variable to be passed down
                     onClick={() => console.log(this.key)}
                 >

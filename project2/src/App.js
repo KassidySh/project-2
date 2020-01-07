@@ -21,16 +21,15 @@ function App() {
     person: null
   })
 
-  const [url, setUrl] = useState({
-    url: null
-  })
-
   const [ind, setInd] = useState({
     id: 1
   })
 
+
+
+
   useEffect(() => {
-    fetch('https://www.superheroapi.com/api.php/3224575430950372/1/')
+    fetch(`https://www.superheroapi.com/api.php/3224575430950372/${ind.id}/`)
       .then(response => response.json())
       .then(data => {
         State(data)
@@ -39,9 +38,10 @@ function App() {
       .catch(err => {
         console.error({ err })
       })
-  }, [])
+  }, [ind])
 
   function State(data) {
+    console.log(data)
     setSuperBeing(data)
     setImg(data.image.url)
     setName(data.name)
@@ -50,27 +50,27 @@ function App() {
   return (
     
     <div className="App">
-{/*       
-      <Link 
+      
+      {/* <Link 
       to exact='/'> HOME
       
-      </Link>
+      </Link> */}
 
       <Heros
         superBeing={superBeing}
         imgUrl={img}
         id={ind}
       // url = {url}
-      /> */}
-{/* 
-      <div>
-        {/* <Router> */}
+      />
+
+      {/* <div>
+        // // {/* <Router> */}
         {/* <Switch>
-                <Route exact path='/' component={App} />
-                <Route path='/Hero/:name'
-                // render. 
-                />
-            </Switch> */} 
+        //         <Route exact path='/' component={App} />
+        //         <Route path='/Hero/:name'
+        //         // render. 
+        //         />
+        //     </Switch> */} 
         {/* </Router> */}
         <Hero 
         superBeing={superBeing}
