@@ -76,23 +76,25 @@ Change the Opacity at the top to be closer to white or nav bar has color of whit
 
 [React Architecture](https://res.cloudinary.com/dt5zs08ue/image/upload/v1578319841/GA%20project%202/Untitled_2_jsp6ku.png)
 
+[Router Layout](https://docs.google.com/drawings/d/1FGeLe8REGUPs5DMqmKve7A0xI1Fhi1hu3nJzQf6ubrw/edit?usp=sharing)
+
 
 **MVP**
 
 - Call API and render Hero
-Buttons (previous and next) working
-Search sorts through list and displays results
-Upper left hand corner takes you home
-Link and Route for manageing pages
-Styled
-Deployed
+- Buttons (previous and next) working
+- Search sorts through list and displays results
+- Upper left hand corner takes you home
+- Link and Route for manageing pages
+- Styled
+- Deployed
 
 
 **Post MVP**
 
-Add local storage
-Add a favorite button that adds object to fave array
-fave button takes you to favorite heros
+- Add local storage
+- Add a favorite button that adds object to fave array
+- fave button takes you to favorite heros
 
 
 
@@ -109,15 +111,15 @@ fave button takes you to favorite heros
 |     Display Page #      |    1     |     1 (hr)     |     :---:     |    :---:    |
 |     Search function     |    1     |    5 (hrs)     |     :---:     |    :---:    |
 |        Deployed         |    1     |    .5 (hr)     |     :---:     |    :---:    |
-|         Styled          |    1     |    8 (hrs)     |     :---:     |    :---:    |
+|         Styled          |    1     |    8 (hrs)     |       1       |    :---:    |
+|     Link and Route      |    1     |    4 (hrs)     |       2       |    :---:    |
 |  Changing header image  |    2     |    3 (hrs)     |     :---:     |    :---:    |
 |    Add Local Storage    |    2     |    3 (hrs)     |     :---:     |    :---:    |
-|     Link and Route      |    2     |    4 (hrs)     |     :---:     |    :---:    |
 | Add to favorites button |    3     |    2 (hrs)     |     :---:     |    :---:    |
 | favorites button (home) |    3     |    3 (hrs)     |     :---:     |    :---:    |
 |    Display favorites    |    3     |    3 (hrs)     |     :---:     |    :---:    |
 |  show 1 favorite hero   |    3     |    3 (hrs)     |     :---:     |    :---:    |
-|       Total Time        |          |    44 (hrs)    |      5.5      |    :---:    |
+|       Total Time        |          |    44 (hrs)    |      8.5      |    :---:    |
 
 **Additional Libraries**
 
