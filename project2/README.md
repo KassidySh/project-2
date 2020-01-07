@@ -79,10 +79,11 @@ Change the Opacity at the top to be closer to white or nav bar has color of whit
 
 **MVP**
 
-Call API and render Hero
+- Call API and render Hero
 Buttons (previous and next) working
 Search sorts through list and displays results
 Upper left hand corner takes you home
+Link and Route for manageing pages
 Styled
 Deployed
 
@@ -92,7 +93,7 @@ Deployed
 Add local storage
 Add a favorite button that adds object to fave array
 fave button takes you to favorite heros
-Link and Route for manageing pages
+
 
 
 **Time Frames**
@@ -100,8 +101,8 @@ Link and Route for manageing pages
 |        Component        | Priority | Estimated Time | Time Invested | Actual Time |
 | :---------------------: | :------: | :------------: | :-----------: | :---------: |
 |    Create components    |    1     |    .5 (hrs)    |     :---:     |    :---:    |
-|        API call         |    1     |     1 (hr)     |     :---:     |    :---:    |
-|      Render 1 hero      |    1     |    4 (hrs)     |     :---:     |    :---:    |
+|        API call         |    1     |     1 (hr)     |      1.5      |    :---:    |
+|      Render 1 hero      |    1     |    4 (hrs)     |       4       |    :---:    |
 |      Display heros      |    1     |     2 (hr)     |     :---:     |    :---:    |
 |     Previous Button     |    1     |    .5 (hr)     |     :---:     |    :---:    |
 |       Next Button       |    1     |    .5 (hr)     |     :---:     |    :---:    |
@@ -116,14 +117,14 @@ Link and Route for manageing pages
 | favorites button (home) |    3     |    3 (hrs)     |     :---:     |    :---:    |
 |    Display favorites    |    3     |    3 (hrs)     |     :---:     |    :---:    |
 |  show 1 favorite hero   |    3     |    3 (hrs)     |     :---:     |    :---:    |
-|       Total Time        |          |    44 (hrs)    |     :---:     |    :---:    |
+|       Total Time        |          |    44 (hrs)    |      5.5      |    :---:    |
 
 **Additional Libraries**
 
 **Code Snippet**
 
 ```  
-fetch('https://www.superheroapi.com/api.php/3224575430950372/1')
+fetch('https://www.superheroapi.com/api.php/3224575430950372/')
       .then(response => response.json())
       .then(data => {
         console.log(data)
@@ -137,3 +138,6 @@ fetch('https://www.superheroapi.com/api.php/3224575430950372/1')
 
 
 **Issues and Resolutions**
+
+Problem: image wouldn't show up, and when I put the exact path in the site errored out
+Solution: I put the image url in state and passed it once fetch had been called

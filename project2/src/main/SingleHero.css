@@ -1,0 +1,10 @@
+.superSingle{
+    display: inline-block;
+    height: 350px;
+    width: 220px;
+    border: black solid 4px;
+}
+img{
+    height: 280px;
+    width: 220px
+}
