@@ -7,7 +7,7 @@ function DisplayHero(props) {
     let image = props.imgUrl
     let name = props.superBeing.name
     let id = props.superBeing.id
-    // console.log(props)
+    // console.log(props.superBeing.image)
     return (
         <>
             <Link to='/Hero:name'>

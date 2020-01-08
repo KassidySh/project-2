@@ -7,11 +7,9 @@ import { render } from '@testing-library/react';
 import Hero from './display/Hero';
 import DisplayHero from './DisplayHero';
 
-function Main() {
+function Main(props) {
 
-  const [name, setName] = useState({
-    name: ''
-  })
+
 
   const [img, setImg] = useState({
     imgURL: ''
@@ -29,7 +27,8 @@ function Main() {
 
 
   useEffect(() => {
-    fetch(`https://www.superheroapi.com/api.php/3224575430950372/${ind.id}/`)
+    
+    fetch(`https://www.superheroapi.com/api.php/3224575430950372/${props.id}/`)
       .then(response => response.json())
       .then(data => {
         State(data)
@@ -41,10 +40,8 @@ function Main() {
   }, [ind])
 
   function State(data) {
-    console.log(data)
     setSuperBeing(data)
     setImg(data.image.url)
-    setName(data.name)
   }
 
   return (
@@ -59,8 +56,7 @@ function Main() {
       <Heros
         superBeing={superBeing}
         imgUrl={img}
-        id={ind}
-      // url = {url}
+        id={props.id}
       />
 
       {/* <div>

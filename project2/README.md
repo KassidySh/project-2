@@ -102,13 +102,13 @@ Change the Opacity at the top to be closer to white or nav bar has color of whit
 
 |        Component        | Priority | Estimated Time | Time Invested | Actual Time |
 | :---------------------: | :------: | :------------: | :-----------: | :---------: |
-|    Create components    |    1     |    .5 (hrs)    |     :---:     |    :---:    |
+|    Create components    |    1     |    .5 (hrs)    |      .5       |    :---:    |
 |        API call         |    1     |     1 (hr)     |      1.5      |    :---:    |
 |      Render 1 hero      |    1     |    4 (hrs)     |       4       |    :---:    |
-|      Display heros      |    1     |     2 (hr)     |     :---:     |    :---:    |
-|     Previous Button     |    1     |    .5 (hr)     |     :---:     |    :---:    |
-|       Next Button       |    1     |    .5 (hr)     |     :---:     |    :---:    |
-|     Display Page #      |    1     |     1 (hr)     |     :---:     |    :---:    |
+|      Display heros      |    1     |     2 (hr)     |       4       |    :---:    |
+|     Previous Button     |    1     |    .5 (hr)     |       1       |    :---:    |
+|       Next Button       |    1     |    .5 (hr)     |       1       |    :---:    |
+|     Display Page #      |    1     |     1 (hr)     |       1       |    :---:    |
 |     Search function     |    1     |    5 (hrs)     |     :---:     |    :---:    |
 |        Deployed         |    1     |    .5 (hr)     |     :---:     |    :---:    |
 |         Styled          |    1     |    8 (hrs)     |       1       |    :---:    |
@@ -119,7 +119,7 @@ Change the Opacity at the top to be closer to white or nav bar has color of whit
 | favorites button (home) |    3     |    3 (hrs)     |     :---:     |    :---:    |
 |    Display favorites    |    3     |    3 (hrs)     |     :---:     |    :---:    |
 |  show 1 favorite hero   |    3     |    3 (hrs)     |     :---:     |    :---:    |
-|       Total Time        |          |    44 (hrs)    |      8.5      |    :---:    |
+|       Total Time        |          |    44 (hrs)    |      16       |    :---:    |
 
 **Additional Libraries**
 

@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react'
+import React, { Component } from 'react'
 import Main from './main/Main'
 import Nav from './header/Nav'
 import Footer from './footer/Footer'
 import './App.css';
+import { render } from '@testing-library/react';
 // import { BrowserRouter as Router } from 'react-router-dom';
 // import { Link, Route, Switch, } from 'react-router-dom'
 // import { render } from '@testing-library/react';
@@ -11,32 +12,57 @@ import './App.css';
 
 
 
-function App() {
-  //start of loop
+class App extends Component {
+ constructor() {
+   super()
+   this.state ={
+    page: 3
+   }
+ }
 
-  const [ind, setInd] = useState({
-    id: 1
-  })
+nextPage = () => {
+  this.setState(prevState => ({
+    page: prevState.page + 1
+  }))
+}
 
+lastPage = () => {
+  this.setState(prevState => ({
+    page: prevState.page - 1
+  }))
+}
 
-// function Display (){
-//   if {ind.id}
-//   return (
-//     <h1>{end}</h1>
-//   )
-// }
-
-console.log('this is index ', ind.id)
+  render (){
+    let page = (this.state.page)*20
+    let index = page*1
+    let rows = []
+    for (let i=0; i<20; i++){
+      rows.push(      
+      <Main
+        key={i}
+        id={index}
+      />,)
+      index=index+1
+    }
 
   return (
     <div>
       <Nav />
-      {Display()}
-      <Main />
-      <Footer/>
+
+      {/* <Main
+        id={372}
+      /> */}
+      <main>
+        {rows}
+      </main>
+      <Footer 
+        page={this.state.page}
+        nextPage={this.nextPage}
+        lastPage={this.lastPage}
+      />
     </div>
 
   )
-}
+}}
 
 export default App;

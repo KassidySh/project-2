@@ -3,12 +3,17 @@ import './Footer.css';
 import Next from './Next'
 import Previous from './Previous'
 
-function Footer() {
+function Footer(props) {
+
     return(
         <footer>
-            <Previous/>
-            <p>Page = 1</p>
-            <Next/>
+            <Previous 
+                    // lastPage={props.lastPage}
+            />
+            <p>Page  {props.page}</p>
+            <Next
+                    nextPage={props.nextPage}
+            />
 
         </footer>
     )
