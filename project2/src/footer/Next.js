@@ -1,9 +1,12 @@
 import React from 'react'
 import './Footer.css';
 
-function Next() {
+function Next(props) {
+
     return (
-        <button className='next'>Next</button>
+        <button 
+         onClick={()=>props.nextPage()}
+        className='next'>Next</button>
     )
 }
 

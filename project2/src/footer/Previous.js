@@ -1,9 +1,12 @@
 import React from 'react'
 import './Footer.css';
 
-function Previous() {
+function Previous(props) {
+
     return(
-        <button className='previous'>Previous</button>
+        <button 
+        onClick={()=>props.lastPage()}
+        className='previous'>Previous</button>
     )
 }
 

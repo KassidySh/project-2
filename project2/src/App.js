@@ -10,7 +10,7 @@ import { render } from '@testing-library/react';
 // import Hero from './main/display/Hero';
 // import DisplayHero from './main/DisplayHero';
 
-
+ 
 
 class App extends Component {
  constructor() {
@@ -21,7 +21,9 @@ class App extends Component {
  }
 
 nextPage = () => {
+  console.log('next p;age working')
   this.setState(prevState => ({
+    
     page: prevState.page + 1
   }))
 }
@@ -33,15 +35,16 @@ lastPage = () => {
 }
 
   render (){
+
     let page = (this.state.page)*20
     let index = page + 1
     let rows = []
     for (let i=0; i<20; i++){
       rows.push(      
       <Main
-        key={i}
+        key={index}
         id={index}
-      />,)
+      />)
       index=index+1
     }
 

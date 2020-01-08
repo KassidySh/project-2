@@ -3,7 +3,7 @@ import React from 'react'
 
 function Heros(props) {
 
-console.log(props)
+console.log('this is heros props',props)
 
   return (
     <main>

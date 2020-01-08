@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react'
-import Hero from './display/Hero'
-import { Link, Route, Switch, } from 'react-router-dom'
+import React from 'react'
+
+import { Link } from 'react-router-dom'
 import './SingleHero.css'
 
 function DisplayHero(props) {
@@ -10,14 +10,19 @@ function DisplayHero(props) {
     // console.log(props.superBeing.image)
     return (
         <>
-            <Link to='/Hero/:name'>
+            <Link to='./display/Hero/:name'>
                 <div className='superSingle'
+                    id={id}
                     key={id}
                     //onCLick get key and assign it to variable to be passed down
-                    onClick={() => console.log(this.key)}
+                    onClick={(e) => console.log(e.target.id)}
                 >
-                    <img src={image} alt={name} />
-                    <h2>{name}</h2>
+                    <img
+                        id={id}
+                        src={image} alt={name} />
+                    <h2
+                        id={id}
+                    >{name}</h2>
                 </div>
             </Link>
             {/* <Hero /> */}

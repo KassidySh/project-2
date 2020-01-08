@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react'
-import Heros from './Heros'
+import Hero from './display/Hero'
 
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Link, Route, Switch, } from 'react-router-dom'
 import { render } from '@testing-library/react';
-import Hero from './display/Hero';
+// import Hero from './display/Hero';
 import DisplayHero from './DisplayHero';
+import App from '../App'
 
 function Main(props) {
-
 
 
   const [img, setImg] = useState({
@@ -44,11 +44,7 @@ function Main(props) {
   return (
     
     <div className="App">
-      
-      {/* <Link 
-      to exact='/'> HOME
-      
-      </Link> */}
+
 
       <DisplayHero
         superBeing={superBeing}
@@ -56,19 +52,16 @@ function Main(props) {
 
       />
 
-      {/* <div>
+      <div>
         <Router>
         <Switch>
-         <Route exact path='/' component={App} />
+         <Route exact path='/' component={App.js} />
          <Route path='/Hero/:name'
-         render. 
+         component={Hero.js}
          />
          </Switch> 
-        </Router> */}
-        {/* <Hero 
-        superBeing={superBeing}
-        imgUrl={img}
-        /> */}
+        </Router>
+      </div>
       </div>
 
 

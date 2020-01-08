@@ -9,7 +9,7 @@ import './MainHero.css';
 
 
 function Hero(props) {
-
+console.log('hero is linked')
     const [name, setName] = useState({
         name: ''
       })
