@@ -1,23 +1,15 @@
 import React from 'react'
-import DisplayHero from './DisplayHero'
+
 
 function Heros(props) {
 
-
-  let imgUrl = props.imgUrl
-  let superBeing = props.superBeing
-
+console.log(props)
 
   return (
-    <div>
+    <main>
 
-      <DisplayHero
-
-        imgUrl={imgUrl}
-        superBeing={superBeing}
-  
-      />
-    </div>
+     HEROS IS CONNECTED
+    </main>
   )
 }
 

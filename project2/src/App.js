@@ -16,7 +16,7 @@ class App extends Component {
  constructor() {
    super()
    this.state ={
-    page: 3
+    page: 0
    }
  }
 
@@ -34,7 +34,7 @@ lastPage = () => {
 
   render (){
     let page = (this.state.page)*20
-    let index = page*1
+    let index = page + 1
     let rows = []
     for (let i=0; i<20; i++){
       rows.push(      

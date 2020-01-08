@@ -19,9 +19,6 @@ function Main(props) {
     person: null
   })
 
-  const [ind, setInd] = useState({
-    id: 1
-  })
 
 
 
@@ -37,7 +34,7 @@ function Main(props) {
       .catch(err => {
         console.error({ err })
       })
-  }, [ind])
+  }, [])
 
   function State(data) {
     setSuperBeing(data)
@@ -53,10 +50,10 @@ function Main(props) {
       
       </Link> */}
 
-      <Heros
+      <DisplayHero
         superBeing={superBeing}
         imgUrl={img}
-        id={props.id}
+
       />
 
       {/* <div>

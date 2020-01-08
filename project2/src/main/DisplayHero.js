@@ -10,7 +10,7 @@ function DisplayHero(props) {
     // console.log(props.superBeing.image)
     return (
         <>
-            <Link to='/Hero:name'>
+            <Link to='/Hero/:name'>
                 <div className='superSingle'
                     key={id}
                     //onCLick get key and assign it to variable to be passed down

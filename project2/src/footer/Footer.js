@@ -4,13 +4,14 @@ import Next from './Next'
 import Previous from './Previous'
 
 function Footer(props) {
+ let current = props.page +1
 
     return(
         <footer>
             <Previous 
-                    // lastPage={props.lastPage}
+                    lastPage={props.lastPage}
             />
-            <p>Page  {props.page}</p>
+            <p>Page  {current}</p>
             <Next
                     nextPage={props.nextPage}
             />

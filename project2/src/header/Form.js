@@ -1,13 +1,23 @@
-import React from 'react'
-import Search from './Search'
+import React, { useState } from 'react'
 import Button from './Button'
 import './Nav.css';
 
+
+
 function Form() {
+
+const[search,setSearch] = useState({
+    search: null
+})
+
     return(
         <div className='form'>
-            <Search/>
-            <Button/>
+        <input
+        onChange= {e=> setSearch(e.target.value)}
+        placeholder='Search'/>
+            <Button
+            search={search}
+            />
         </div>
     )
 }
