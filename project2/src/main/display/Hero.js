@@ -51,7 +51,6 @@ console.log('this is id ', props.id)
     // console.log(superBeing)
     return (
         <main>
-        <h1>DISPLAY HERO IS UP</h1>
         <Header
         name={superBeing.name}
         />
@@ -61,9 +60,9 @@ console.log('this is id ', props.id)
                 <Biography
         bio = {superBeing.biography}
         />
-        <Image
+        {/* <Image
         imgUrl={img}
-        />
+        /> */}
 
 
         <span className='bottom'>

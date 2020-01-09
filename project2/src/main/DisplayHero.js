@@ -20,16 +20,16 @@ function DisplayHero(props) {
             <div className='superSingle'
                 id={id}
                 key={id}
-//e.target.value has id need to call it in props.setId onClick
-            // onClick={(e)=>console.log(e.target.id)}
-        onClick={(e) => {let id= (e.target.id)
-            props.setId(id)
-}}
+                //e.target.value has id need to call it in props.setId onClick
+                onClick={(e) => {
+                    let id = (e.target.id)
+                    props.setId(id)
+                }}
             >
                 <img
                     id={id}
                     src={image} alt={name} />
-                <Link to='/Hero/:id'
+                <Link to={`/Hero/${id}`}
                     id={id}
                 >
                     {name}</Link>

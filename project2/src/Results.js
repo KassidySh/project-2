@@ -5,7 +5,7 @@ import Main from './main/Main'
 
 
 function Results(props) {
-
+    console.log('results is being called')
     //map 20 times through array to show a page each time
     if (props.list !== undefined) {
     let list = props.list.map(item => {

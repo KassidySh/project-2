@@ -83,9 +83,8 @@ class App extends Component {
                                     setId={this.setId}
                                 />
                             )}
-
                         />
-                        <Route path='/Hero/:id'
+                        <Route exact path='/Hero/:id'
                             render={(props) => (
                             <Hero
                             id={this.state.id}
