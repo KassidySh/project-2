@@ -4,19 +4,20 @@ import './Nav.css';
 
 
 
-function Form() {
+function Form(props) {
 
-const[search,setSearch] = useState({
-    search: null
-})
+    const [search, setSearch] = useState({
+        search: null
+    })
 
-    return(
+    return (
         <div className='form'>
-        <input
-        onChange= {e=> setSearch(e.target.value)}
-        placeholder='Search'/>
+            <input
+                onChange={e => setSearch(e.target.value)}
+                placeholder='Search' />
             <Button
-            search={search}
+                setList={props.setList}
+                search={search}
             />
         </div>
     )

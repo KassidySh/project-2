@@ -1,36 +1,36 @@
-import React, { useState } from 'react'
-import Heros from './Heros'
+import React from 'react'
 import './Nav.css';
 
 function Button(props) {
-    // console.log(props.search)
 
-    // const [info, setInfo] = ({
-    //     res: {}
-    // })
 
     function clickSearch(e) {
+        //search string
         fetch(`https://www.superheroapi.com/api.php/3224575430950372/search/${props.search}/`)
-        .then(response => response.json())
-        .then(data => {
-          display(data)
-        }
-        )
-        .catch(err => {
-          console.error({ err })
-        })
+            .then(response => response.json())
+            .then(data => {
+                display(data)
+            }
+            )
+            .catch(err => {
+                console.error({ err })
+            })
     }
 
     function display(data) {
-        console.log(data)
-    // //    if(!data==null)
-    // //     return(
-    // //         <Heros
-    // //         data={data.data}
-    // //    />)
-          }
+        let list = []
+        let res = (data.results)
+        //collection of matching ids
+        let searchList = res.map(item => {
+            //convert string# to integer
+            let int = parseInt(item.id)
+            list.push(int)
 
+        })
+        //setlist to state
+        props.setList(list)
 
+    }
 
 
     return (

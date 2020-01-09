@@ -3,13 +3,18 @@ import Home from './Home'
 import Form from './Form'
 import './Nav.css';
 
-function Nav() {
-    return(
+function Nav(props) {
+
+    return (
         <header>
-        <nav>
-<Home/>
-<Form/>
-        </nav>
+            <nav>
+                <Home
+                    setHome={props.setHome}
+                />
+                <Form
+                    setList={props.setList}
+                />
+            </nav>
         </header>
     )
 }

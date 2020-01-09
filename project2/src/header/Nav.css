@@ -1,27 +1,29 @@
-nav{
+nav {
     display: grid;
-    grid-template-columns: 60px 3fr ;
+    grid-template-columns: 60px 3fr;
 }
-input{
+
+input {
     color: black;
     height: 25px;
     width: 250px;
     float: right;
 }
-.form{
+
+.form {
     height: 25px;
     width: 250px;
     float: right;
     grid-column: 2;
 }
-.submit{
+
+.submit {
     background-color: white;
     color: black;
-    /* height: 25px;
-    width: 70px; */
     float: right;
 }
-.home{
+
+.home {
     height: 60px;
     width: 60px;
 }

@@ -1,71 +1,86 @@
 import React, { Component } from 'react'
-import Main from './main/Main'
 import Nav from './header/Nav'
 import Footer from './footer/Footer'
+import Results from './Results'
 import './App.css';
-import { render } from '@testing-library/react';
-// import { BrowserRouter as Router } from 'react-router-dom';
-// import { Link, Route, Switch, } from 'react-router-dom'
-// import { render } from '@testing-library/react';
-// import Hero from './main/display/Hero';
-// import DisplayHero from './main/DisplayHero';
+import Hero from './main/display/Hero'
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Link, Route, Switch, } from 'react-router-dom'
 
- 
+
+
+
 
 class App extends Component {
- constructor() {
-   super()
-   this.state ={
-    page: 0
-   }
- }
 
-nextPage = () => {
-  console.log('next p;age working')
-  this.setState(prevState => ({
-    
-    page: prevState.page + 1
-  }))
-}
-
-lastPage = () => {
-  this.setState(prevState => ({
-    page: prevState.page - 1
-  }))
-}
-
-  render (){
-
-    let page = (this.state.page)*20
-    let index = page + 1
-    let rows = []
-    for (let i=0; i<20; i++){
-      rows.push(      
-      <Main
-        key={index}
-        id={index}
-      />)
-      index=index+1
+  constructor() {
+    super()
+    this.state = {
+      page: 0,
+      list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
     }
+  }
 
-  return (
-    <div>
-      <Nav />
+  //adds one to page for next button
+  nextPage = () => {
 
-      {/* <Main
-        id={372}
-      /> */}
-      <main>
-        {rows}
-      </main>
-      <Footer 
-        page={this.state.page}
-        nextPage={this.nextPage}
-        lastPage={this.lastPage}
-      />
-    </div>
+    this.setState(prevState => ({
+      page: prevState.page + 1
+    }))
+  }
+  //subtracts one from page for last page
+  lastPage = () => {
 
-  )
-}}
+    this.setState(prevState => ({
+      page: prevState.page - 1
+    }))
+  }
+
+  setList = (list) => {
+    this.setState({ page: 0 })
+    this.setState({ list: list })
+  }
+
+setHome = () => {
+  this.setState({page: 0})
+  this.setState({ list:
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+  })
+}
+
+  render() {
+console.log('this is the app page', this.state.page)
+    return (
+      <div>
+        <Nav
+        setHome={this.setHome}
+          setList={this.setList}
+        />
+
+        <main>
+          <Results
+            list={this.state.list}
+            page={this.state.page}
+          />
+        </main>
+
+        <Router>
+          <Switch>
+            <Route exact path='/' component={Results} />
+            <Route path='/Hero'
+              component={Hero}
+            />
+          </Switch>
+        </Router>
+
+        <Footer
+          page={this.state.page}
+          nextPage={this.nextPage}
+          lastPage={this.lastPage}
+        />
+      </div>
+    )
+  }
+}
 
 export default App;

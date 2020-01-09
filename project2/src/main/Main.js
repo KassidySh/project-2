@@ -6,6 +6,7 @@ import { Link, Route, Switch, } from 'react-router-dom'
 import { render } from '@testing-library/react';
 // import Hero from './display/Hero';
 import DisplayHero from './DisplayHero';
+import Example from './example'
 import App from '../App'
 
 function Main(props) {
@@ -19,8 +20,12 @@ function Main(props) {
     person: null
   })
 
+  // const [nam, setNam] = ({
+  //   nam: null
+  // })
 
-
+// changeName=(nam)=>{
+// setNam()}
 
 
   useEffect(() => {
@@ -45,22 +50,17 @@ function Main(props) {
     
     <div className="App">
 
-
+ <Link to='/display/Hero'
+    >
       <DisplayHero
         superBeing={superBeing}
         imgUrl={img}
-
       />
-
+</Link>
       <div>
-        <Router>
-        <Switch>
-         <Route exact path='/' component={App.js} />
-         <Route path='/Hero/:name'
-         component={Hero.js}
-         />
-         </Switch> 
-        </Router>
+
+
+
       </div>
       </div>
 

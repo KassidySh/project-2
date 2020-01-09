@@ -24,23 +24,23 @@ console.log('hero is linked')
 
 
 
-    useEffect(() => {
-        fetch('https://www.superheroapi.com/api.php/3224575430950372/1/')
-          .then(response => response.json())
-          .then(data => {
-            State(data)
-          }
-          )
-          .catch(err => {
-            console.error({ err })
-          })
-      }, [])
+    // useEffect(() => {
+    //     fetch('https://www.superheroapi.com/api.php/3224575430950372/1/')
+    //       .then(response => response.json())
+    //       .then(data => {
+    //         State(data)
+    //       }
+    //       )
+    //       .catch(err => {
+    //         console.error({ err })
+    //       })
+    //   }, [])
     
-      function State(data) {
-        setSuperBeing(data)
-        setImg(data.image.url)
-        setName(data.name)
-      }
+    //   function State(data) {
+    //     setSuperBeing(data)
+    //     setImg(data.image.url)
+    //     setName(data.name)
+    //   }
 
 
 
@@ -50,7 +50,7 @@ console.log('hero is linked')
     // console.log(superBeing)
     return (
         <main>
-        <Header
+        {/* <Header
         name={superBeing.name}
         />
                 <Power
@@ -71,7 +71,8 @@ console.log('hero is linked')
         <Friends
         friends={superBeing.connections}
         />
-        </span>
+        </span> */}
+        <h1>DISPLAY HERO IS UP</h1>
         </main>
     )
 }
