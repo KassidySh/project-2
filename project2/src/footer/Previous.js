@@ -3,11 +3,11 @@ import './Footer.css';
 
 function Previous(props) {
 
-    return ( <
-        button onClick = {
-            () => props.lastPage() }
-
-        className = 'previous' > Previous < /button>
+    return (
+        <button onClick={
+            () => props.lastPage()}
+        // {props.page != 0 ? }
+            className='previous' > Previous </button>
     )
 }
 

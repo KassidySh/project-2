@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import Hero from './display/Hero'
+// import Hero from './display/Hero'
 
-import { BrowserRouter as Router } from 'react-router-dom';
-import { Link, Route, Switch, } from 'react-router-dom'
-import { render } from '@testing-library/react';
+// import { BrowserRouter as Router } from 'react-router-dom';
+// import { Link, Route, Switch, } from 'react-router-dom'
+// import { render } from '@testing-library/react';
 // import Hero from './display/Hero';
 import DisplayHero from './DisplayHero';
 import Example from './example'
@@ -11,7 +11,7 @@ import App from '../App'
 
 function Main(props) {
 
-
+console.log(props)
   const [img, setImg] = useState({
     imgURL: ''
   })
@@ -20,9 +20,6 @@ function Main(props) {
     person: null
   })
 
-  // const [nam, setNam] = ({
-  //   nam: null
-  // })
 
 // changeName=(nam)=>{
 // setNam()}
@@ -45,18 +42,19 @@ function Main(props) {
     setSuperBeing(data)
     setImg(data.image.url)
   }
-
+// console.log(props)
   return (
     
     <div className="App">
 
- <Link to='/display/Hero'
-    >
+ {/* <Link to='/display/Hero'
+    > */}
       <DisplayHero
         superBeing={superBeing}
         imgUrl={img}
+        setIdAndName={props.setIdAndName}
       />
-</Link>
+{/* </Link> */}
       <div>
 
 

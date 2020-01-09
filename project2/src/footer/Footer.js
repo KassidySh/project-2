@@ -9,6 +9,7 @@ function Footer(props) {
     return(
         <footer>
             <Previous 
+            page={props.page}
         lastPage={props.lastPage}
             />
             <p>Page  {current}</p>
