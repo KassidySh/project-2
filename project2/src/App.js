@@ -5,7 +5,7 @@ import Results from './Results'
 import './App.css';
 import Hero from './main/display/Hero'
 import { BrowserRouter as Router } from 'react-router-dom';
-import { Link, Route, Switch, } from 'react-router-dom'
+import {  Route, Switch, } from 'react-router-dom'
 
 
 
@@ -50,43 +50,57 @@ class App extends Component {
         })
     }
 
-    setIdAndName = (id, heroName) => {
+    setId = (id) => {
+        
         this.setState({ id: id })
-        this.setState({ heroName: heroName })
     }
 
     render() {
 
         return (
+
             <div >
+
                 <Nav
                     setHome={this.setHome}
                     setList={this.setList} />
 
                 <main >
-                    <Results
+                    {/* <Results
                         list={this.state.list}
                         page={this.state.page}
-                        setIdAndName={this.setIdAndName}
-                    /> </main>
+                        setId={this.setId}
+                    /> </main> */}
 
                 <Router >
                     <Switch >
                         <Route exact path='/'
-                            component={Results}
+                            // component={Results}
+                            render={(props) => (
+                                <Results
+                                    list={this.state.list}
+                                    page={this.state.page}
+                                    setId={this.setId}
+                                />
+                            )}
 
                         />
-                        <Route path='/Hero'
-                            component={Hero}
+                        <Route path='/Hero/:id'
+                            render={(props) => (
+                            <Hero
+                            id={this.state.id}
+/>                                 
+)}
                         />
                     </Switch>
                 </Router>
-
+</main>
                 <Footer
                     page={this.state.page}
                     nextPage={this.nextPage}
                     lastPage={this.lastPage}
                 />
+
             </div>
         )
     }

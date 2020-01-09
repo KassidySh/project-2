@@ -7,27 +7,34 @@ function DisplayHero(props) {
     let image = props.imgUrl
     let name = props.superBeing.name
     let id = props.superBeing.id
-    // console.log(props.superBeing.image)
-    // <Link to='./display/Hero/:{name}'
-    // >
+
+    // function setInfo(e){
+    // console.log(e.target)
+    // }
+
+    // console.log(props.setId)
+
     return (
+
         <>
-            {/* <Link to='./display/Hero'> */}
             <div className='superSingle'
                 id={id}
                 key={id}
-                //onCLick get key and assign it to variable to be passed down
-                onClick={(e) => console.log(e.target.id)}
+//e.target.value has id need to call it in props.setId onClick
+            // onClick={(e)=>console.log(e.target.id)}
+        onClick={(e) => {let id= (e.target.id)
+            props.setId(id)
+}}
             >
                 <img
                     id={id}
                     src={image} alt={name} />
-                <Link to='/Hero'
+                <Link to='/Hero/:id'
                     id={id}
-                >{name}</Link>
+                >
+                    {name}</Link>
             </div>
-            {/* </Link> */}
-            {/* <Hero /> */}
+
         </>
     )
 }

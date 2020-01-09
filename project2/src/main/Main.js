@@ -11,7 +11,6 @@ import App from '../App'
 
 function Main(props) {
 
-console.log(props)
   const [img, setImg] = useState({
     imgURL: ''
   })
@@ -52,7 +51,7 @@ console.log(props)
       <DisplayHero
         superBeing={superBeing}
         imgUrl={img}
-        setIdAndName={props.setIdAndName}
+        setId={props.setId}
       />
 {/* </Link> */}
       <div>

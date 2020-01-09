@@ -106,20 +106,20 @@ Change the Opacity at the top to be closer to white or nav bar has color of whit
 |        API call         |    1     |     1 (hr)     |      1.5      |    :---:    |
 |      Render 1 hero      |    1     |    4 (hrs)     |       4       |    :---:    |
 |      Display heros      |    1     |     2 (hr)     |       4       |    :---:    |
-|     Previous Button     |    1     |    .5 (hr)     |       1       |    :---:    |
-|       Next Button       |    1     |    .5 (hr)     |       1       |    :---:    |
+|     Previous Button     |    1     |    .5 (hr)     |       2       |    :---:    |
+|       Next Button       |    1     |    .5 (hr)     |       2       |    :---:    |
 |     Display Page #      |    1     |     1 (hr)     |       1       |    :---:    |
-|     Search function     |    1     |    5 (hrs)     |     :---:     |    :---:    |
+|     Search function     |    1     |    5 (hrs)     |       5       |    :---:    |
 |        Deployed         |    1     |    .5 (hr)     |     :---:     |    :---:    |
 |         Styled          |    1     |    8 (hrs)     |       1       |    :---:    |
-|     Link and Route      |    1     |    4 (hrs)     |       2       |    :---:    |
+|     Link and Route      |    1     |    4 (hrs)     |       5       |    :---:    |
 |  Changing header image  |    2     |    3 (hrs)     |     :---:     |    :---:    |
 |    Add Local Storage    |    2     |    3 (hrs)     |     :---:     |    :---:    |
 | Add to favorites button |    3     |    2 (hrs)     |     :---:     |    :---:    |
 | favorites button (home) |    3     |    3 (hrs)     |     :---:     |    :---:    |
 |    Display favorites    |    3     |    3 (hrs)     |     :---:     |    :---:    |
 |  show 1 favorite hero   |    3     |    3 (hrs)     |     :---:     |    :---:    |
-|       Total Time        |          |    44 (hrs)    |      16       |    :---:    |
+|       Total Time        |          |    44 (hrs)    |      26       |    :---:    |
 
 **Additional Libraries**
 
