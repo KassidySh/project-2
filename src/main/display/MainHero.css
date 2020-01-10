@@ -1,0 +1,46 @@
+main #info{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 5% 2fr 1fr;
+}
+
+h5{
+font-size: 20px;
+}
+
+#info .work{
+margin-left: 0;
+padding-left: 0;
+}
+
+#info .img{
+height: 50%;
+width: 50%;
+}
+
+@media (max-width:425px) {
+
+main #info{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 5% 2fr 1fr;
+    font-size: larger;
+}
+
+h5{
+font-size: 2em;
+}
+
+#info .work{
+margin-left: 0;
+padding-left: 0;
+}
+
+#info .img{
+height: 100%;
+width: 100%;
+}
+
+}
