@@ -8,11 +8,6 @@ function DisplayHero(props) {
     let name = props.superBeing.name
     let id = props.superBeing.id
 
-    // function setInfo(e){
-    // console.log(e.target)
-    // }
-
-    // console.log(props.setId)
 
     return (
 

@@ -1,11 +1,11 @@
-import React, {setState, useEffect, useState} from 'react'
+import React, { useEffect, useState} from 'react'
 import Power from './Power.js'
 import Friends from './Friends'
 import Work from './Work'
 import Image from './Image'
 import Biography from './Biography.js';
 import Header from './Header.js'
-import { Link } from 'react-router-dom'
+
 import './MainHero.css';
 
 
@@ -55,12 +55,8 @@ function Hero(props) {
   if (superBeing !== null) {
 
     return (
-      <main
+      <main id='info'
 >
-        <Link to='/' >
-<button>Back</button>
-        </Link>
-
         <Header
         name={superBeing.name}
         />

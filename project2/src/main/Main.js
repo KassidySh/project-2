@@ -1,13 +1,6 @@
 import React, { useState, useEffect } from 'react'
-// import Hero from './display/Hero'
-
-// import { BrowserRouter as Router } from 'react-router-dom';
-// import { Link, Route, Switch, } from 'react-router-dom'
-// import { render } from '@testing-library/react';
-// import Hero from './display/Hero';
 import DisplayHero from './DisplayHero';
-import Example from './example'
-import App from '../App'
+
 
 function Main(props) {
 

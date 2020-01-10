@@ -1,15 +1,11 @@
 import React, { Component } from 'react'
 import Nav from './header/Nav'
 import Footer from './footer/Footer'
+import Back from './footer/Back'
 import Results from './Results'
 import './App.css';
 import Hero from './main/display/Hero'
-import { BrowserRouter as Router } from 'react-router-dom';
 import { Route, Switch, } from 'react-router-dom'
-
-
-
-
 
 class App extends Component {
 
@@ -51,7 +47,6 @@ class App extends Component {
     }
 
     setId = (id) => {
-
         this.setState({ id: id })
     }
 
@@ -66,40 +61,44 @@ class App extends Component {
                     setList={this.setList} />
 
                 <main >
-                    {/* <Results
-                        list={this.state.list}
-                        page={this.state.page}
-                        setId={this.setId}
-                    /> </main> */}
 
-                    {/* <Router > */}
-                        <Switch >
-                            <Route exact path='/'
-                                // component={Results}
-                                render={({props}) => (
-                                    <Results
-                                        list={this.state.list}
-                                        page={this.state.page}
-                                        setId={this.setId}
-                                    />
-                                )}
-                            />
-                            <Route exact path='/Hero/:id'
-                                render={(props) => (
-                                    <Hero
-                                        id={this.state.id}
-                                    />
-                                )}
-                            />
-                        </Switch>
-                    {/* </Router> */}
+                    <Switch >
+                        <Route exact path='/'
+                            render={({ props }) => (
+                                <Results
+                                    list={this.state.list}
+                                    page={this.state.page}
+                                    setId={this.setId}
+                                />
+                            )}
+                        />
+                        <Route exact path='/Hero/:id'
+                            render={(props) => (
+                                <Hero
+                                    id={this.state.id}
+                                />
+                            )}
+                        />
+                    </Switch>
                 </main>
-                <Footer
-                    page={this.state.page}
-                    nextPage={this.nextPage}
-                    lastPage={this.lastPage}
-                />
 
+                <Switch >
+                    <Route exact path='/'
+                        render={({ props }) => (
+                            <Footer
+                                page={this.state.page}
+                                nextPage={this.nextPage}
+                                lastPage={this.lastPage}
+                            />
+                        )}
+                    />
+                    <Route exact path='/Hero/:id'
+                        render={(props) => (
+                            <Back
+                            />
+                        )}
+                    />
+                </Switch>
             </div>
         )
     }

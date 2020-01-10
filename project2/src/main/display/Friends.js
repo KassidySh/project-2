@@ -5,28 +5,28 @@ function Friends(props) {
 
     if (props.friends !== undefined) {
 
-let values = (Object.values(props.friends))
-let keys = (Object.keys(props.friends))
+        let values = (Object.values(props.friends))
+        let keys = (Object.keys(props.friends))
 
 
-           
- let list = keys.map((item, index) => {
-            
-                return (
-<ol
-key={index}
-><h5>{item}</h5>{values[index]}</ol>
-                   
-                )
-            })
-            return (<div> {list} </div>
+
+        let list = keys.map((item, index) => {
+
+            return (
+                <ol
+                    key={index}
+                ><h5>{item}</h5>{values[index]}</ol>
 
             )
-        }
-return (
-            <div></div>
+        })
+        return (<div id='friends'> {list} </div>
+
         )
     }
+    return (
+        <div></div>
+    )
+}
 
 
 

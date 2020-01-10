@@ -19,7 +19,7 @@ function Biography(props){
 
         )
     })
-    return (<div> {list} </div>
+    return (<div id='bio'> {list} </div>
 
     )
 }

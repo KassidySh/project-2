@@ -4,9 +4,9 @@ import './Footer.css';
 function Next(props) {
 
     return (
-        <button 
-         onClick={()=>props.nextPage()}
-        className='next'>Next</button>
+        <button
+            onClick={() => props.nextPage()}
+            className='next'>Next</button>
     )
 }
 

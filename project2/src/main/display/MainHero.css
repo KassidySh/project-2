@@ -1,104 +1,46 @@
-main{
-    background-color: burlywood;
+main #info{
+    background-color: white;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 25% 2fr 1fr;
-}
-.bottom{
-    display: grid;
-    grid-row: 3;
-    grid-column: 1 / 5;
-    margin: 1%;
-    grid-template-rows: 1fr 1fr;
-}
-.header{
-    font-size: 400%;
-    background-color: rgb(15, 82, 186);
-    padding: 2%;
-    grid-column: 1 / 5;
-}
-#info{
-    height: 400px;
-    width: 500px;
-    margin: 1%;
-    grid-row: 2;
-    grid-column: 4;
-}
-#info img{
-    height: 400px;
-    width: 300px;
-    margin: 3%;
-    grid-row: 2;
-    grid-column: 4;
-}
-.about{
-    background-color: blueviolet;
-    grid-column: 2 / 4;
-    margin: 2%;
-}
-.power{
-    background-color: red;
-    grid-column: 1;
-    margin: 2% 2% 2% 4%;
-}
-.work{
-    background-color: cadetblue;
-}
-.friend{
-    background-color: coral;
+    grid-template-rows: 5% 2fr 1fr;
 }
 
+h5{
+font-size: 20px;
+}
+
+#info .work{
+margin-left: 0;
+padding-left: 0;
+}
+
+#info .img{
+height: 50%;
+width: 50%;
+}
 
 @media (max-width:425px) {
-    main{
-        margin: 0;
-        background-color: burlywood;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 20% 2fr 1fr 1fr 1fr;
-    }
-    .bottom{
-        display: grid;
-        grid-row: 5/7;
-        grid-column: 1;
-        margin: 1%;
-        grid-template-rows: 1fr 1fr;
-    }
-    .header{
-        font-size: 400%;
-        background-color: rgb(15, 82, 186);
-        padding: 2%;
-        grid-column: 1;
-    }
-    #info {
-        /* height: 400px;
-        width: 300px; */
-        margin: 3%;
-        grid-row: 2;
-        grid-column: 1;
-    }
-    #info img{
-        height: 25em;
-        width: 20em;
-        margin: 1% 3% 5% 3%;
-        grid-row: 2;
-        grid-column: 4;
-    }
 
-    .about{
-        background-color: blueviolet;
-        grid-column: 1;
-        margin: 2% 2% 0 2%;
-    }
-    .power{
-        background-color: red;
-        grid-column: 1;
-        margin: 2% 2% 2% 4%;
-    }
-    .work{
-        background-color: cadetblue;
-    }
-    .friend{
-        background-color: coral;
-    }
+main #info{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 5% 2fr 1fr;
+    font-size: larger;
+}
+
+h5{
+font-size: 2em;
+}
+
+#info .work{
+margin-left: 0;
+padding-left: 0;
+}
+
+#info .img{
+height: 100%;
+width: 100%;
+}
+
 }

@@ -1,4 +1,4 @@
-import React, { setState, useEffect, useState } from 'react'
+import React from 'react'
 import './MainHero.css';
 
 function Header(props) {

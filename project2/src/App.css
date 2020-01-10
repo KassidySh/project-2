@@ -1,0 +1,98 @@
+footer{
+color: white;
+background-color: darkblue;
+margin: 0;
+}
+
+header{
+background-color: darkblue;
+}
+
+#results{
+height: 100%;
+width: 100%;
+display: grid;
+grid-template-columns: 1fr ;
+background-color: white;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: 15% 1fr 1fr 1fr 1fr 1.5fr ;
+}
+
+#results .App{
+margin: 10%;
+}
+
+#results h1{
+color: rgba(255,255,255,1);
+display: inline-block;
+font-size: 700%;
+grid-column: 2/3;
+display: inline-block;
+padding: 0;
+background-color: black;
+}
+
+#results #background{
+text-align: center;
+grid-column: 1/5;
+display: inline-block;
+height: 80%;
+background-image: url(https://images.unsplash.com/photo-1486421728445-c460298b20b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+background-color: blueviolet;
+}
+
+.App{
+text-align: center;
+font-size: 130%;
+
+}
+
+
+
+@media (max-width:425px) {
+footer{
+color: white;
+background-color: darkblue;
+margin: 0;
+}
+
+header{
+background-color: darkblue;
+width: 100%;
+}
+
+#results{
+height: 100%;
+width: 100%;
+display: grid;
+grid-template-columns: 1fr ;
+background-color: white;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: 25% 2fr 1fr;
+}
+
+#results .App{
+margin: 10%;
+}
+
+#results h1{
+color: rgba(255,255,255,1);
+display: inline-block;
+font-size: 700%;
+grid-column: 2/3;
+display: inline-block;
+padding: 0;
+background-color: black;
+}
+
+#results #background{
+text-align: center;
+grid-column: 1/5;
+display: inline-block;
+height: 100%;
+background-image: url(https://images.unsplash.com/photo-1486421728445-c460298b20b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+background-color: blueviolet;
+}
+}
