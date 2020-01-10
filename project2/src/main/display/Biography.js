@@ -8,19 +8,15 @@ function Biography(props){
     let values = (Object.values(props.bio))
     let keys = (Object.keys(props.bio))
 
-
-
     let list = keys.map((item, index) => {
 
         return (
             <ol
                 key={index}
             ><h5>{item}</h5>{values[index]}</ol>
-
         )
     })
     return (<div id='bio'> {list} </div>
-
     )
 }
 return (

@@ -102,44 +102,65 @@ Change the Opacity at the top to be closer to white or nav bar has color of whit
 
 |        Component        | Priority | Estimated Time | Time Invested | Actual Time |
 | :---------------------: | :------: | :------------: | :-----------: | :---------: |
-|    Create components    |    1     |    .5 (hrs)    |      .5       |    :---:    |
-|        API call         |    1     |     1 (hr)     |      1.5      |    :---:    |
-|      Render 1 hero      |    1     |    4 (hrs)     |       4       |    :---:    |
+|    Create components    |    1     |    .5 (hrs)    |       1       |    :---:    |
+|        API call         |    1     |     1 (hr)     |       1.5     |    :---:    |
+|      Render 1 hero      |    1     |    4 (hrs)     |       7       |    :---:    |
 |      Display heros      |    1     |     2 (hr)     |       4       |    :---:    |
 |     Previous Button     |    1     |    .5 (hr)     |       2       |    :---:    |
 |       Next Button       |    1     |    .5 (hr)     |       2       |    :---:    |
 |     Display Page #      |    1     |     1 (hr)     |       1       |    :---:    |
 |     Search function     |    1     |    5 (hrs)     |       5       |    :---:    |
-|        Deployed         |    1     |    .5 (hr)     |     :---:     |    :---:    |
-|         Styled          |    1     |    8 (hrs)     |       1       |    :---:    |
+|        Deployed         |    1     |    .5 (hr)     |       1.5     |    :---:    |
+|         Styled          |    1     |    8 (hrs)     |       6       |    :---:    |
 |     Link and Route      |    1     |    4 (hrs)     |       5       |    :---:    |
-|  Changing header image  |    2     |    3 (hrs)     |     :---:     |    :---:    |
-|    Add Local Storage    |    2     |    3 (hrs)     |     :---:     |    :---:    |
-| Add to favorites button |    3     |    2 (hrs)     |     :---:     |    :---:    |
-| favorites button (home) |    3     |    3 (hrs)     |     :---:     |    :---:    |
-|    Display favorites    |    3     |    3 (hrs)     |     :---:     |    :---:    |
-|  show 1 favorite hero   |    3     |    3 (hrs)     |     :---:     |    :---:    |
-|       Total Time        |          |    44 (hrs)    |      26       |    :---:    |
+|  Changing header image  |    2     |    3 (hrs)     |       0       |    :---:    |
+|    Add Local Storage    |    2     |    3 (hrs)     |       0       |    :---:    |
+| Add to favorites button |    3     |    2 (hrs)     |       0       |    :---:    |
+| favorites button (home) |    3     |    3 (hrs)     |       0       |    :---:    |
+|    Display favorites    |    3     |    3 (hrs)     |       0       |    :---:    |
+|  show 1 favorite hero   |    3     |    3 (hrs)     |       0       |    :---:    |
+|       Total Time        |          |    44 (hrs)    |      37       |    :---:    |
 
 **Additional Libraries**
 
 **Code Snippet**
 
 ```  
-fetch('https://www.superheroapi.com/api.php/3224575430950372/')
-      .then(response => response.json())
-      .then(data => {
-        console.log(data)
-       
-      }
-      )
-      .catch(err => {
-        console.error({err})
-      })
+let keys = (Object.keys(props.bio))
+
+    let list = keys.map((item, index) => {
+
+        return (
+            <ol
+                key={index}
+            ><h5>{item}</h5>{values[index]}</ol>
+        )
+    })
   ```
 
 
 **Issues and Resolutions**
 
-Problem: image wouldn't show up, and when I put the exact path in the site errored out
-Solution: I put the image url in state and passed it once fetch had been called
+**Problem:** image wouldn't show up, and when I put the exact path in the site errored out
+
+**Solution:** I put the image url in state and passed it once fetch had been called
+
+**Problem:** when I was autosaving my code was re-formating adding spaces in random places
+
+**Solution:** I deleted the format doc with pretteir
+
+**Problem:** the search button wouldn't return the correct results
+
+**Solution:** I parseInt(id) the id returned so I wasn't adding a string to a number
+
+**Problem:**  Pages won't render because props isn't defined on the first render
+
+**Solution:** I put the function where props is called in if condtionals where if props wasn't defined it renders an empty div
+
+**Problem:** Clicking on Home button wouldn't render home
+
+**Solution:** Removed Router from around Switch
+
+**Problem:** My css files were conflicting and fighting over components
+
+**Solution:** I added an id to each main page and called most of my components from that
