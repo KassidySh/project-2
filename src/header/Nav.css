@@ -40,7 +40,7 @@ input {
 
 nav {
     display: grid;
-width: 200%;
+    width: 200%;
     grid-template-columns: 1fr 2fr 1fr;
 }
 

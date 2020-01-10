@@ -5,15 +5,12 @@ import './App.css';
 function Results(props) {
 
 
-
-
-    console.log('results is being called')
     //map 20 times through array to show a page each time
     if (props.list !== undefined) {
 
         let list = props.list.map(item => {
             // multiply by 20 for each page, will add 20 per page
-            let set = props.page * 20
+            let set = props.page * 10
             // // add set to item+item to map count up
             item = item + set
 

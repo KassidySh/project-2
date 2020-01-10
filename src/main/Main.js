@@ -41,6 +41,7 @@ function Main(props) {
         superBeing={superBeing}
         imgUrl={img}
         setId={props.setId}
+        imgFinished={props.imgFinished}
       />
 {/* </Link> */}
       <div>

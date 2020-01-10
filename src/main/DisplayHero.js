@@ -7,6 +7,7 @@ function DisplayHero(props) {
     let image = props.imgUrl
     let name = props.superBeing.name
     let id = props.superBeing.id
+
     return (
 
         <>
@@ -22,10 +23,11 @@ function DisplayHero(props) {
                 <img
                     id={id}
                     src={image} alt={name} />
-                <Link to={`/Hero/${id}`}
+                <Link to={`/Hero/${name}`}
                     id={id}
                 >
-                    {name}</Link>
+                    {name}
+                </Link>
             </div>
 
         </>

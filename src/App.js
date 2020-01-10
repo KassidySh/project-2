@@ -15,7 +15,7 @@ class App extends Component {
             heroName: '',
             id: 0,
             page: 0,
-            list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+            list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
         }
     }
 
@@ -40,7 +40,7 @@ class App extends Component {
     setHome = () => {
         this.setState({ page: 0 })
         this.setState({
-            list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+            list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
         })
     }
 
