@@ -7,8 +7,6 @@ function DisplayHero(props) {
     let image = props.imgUrl
     let name = props.superBeing.name
     let id = props.superBeing.id
-
-
     return (
 
         <>

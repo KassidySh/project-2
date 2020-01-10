@@ -13,10 +13,6 @@ function Main(props) {
   })
 
 
-// changeName=(nam)=>{
-// setNam()}
-
-
   useEffect(() => {
     
     fetch(`https://www.superheroapi.com/api.php/3224575430950372/${props.id}/`)

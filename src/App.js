@@ -21,14 +21,12 @@ class App extends Component {
 
     //adds one to page for next button
     nextPage = () => {
-
         this.setState(prevState => ({
             page: prevState.page + 1
         }))
     }
     //subtracts one from page for last page
     lastPage = () => {
-
         this.setState(prevState => ({
             page: prevState.page - 1
         }))
