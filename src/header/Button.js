@@ -19,13 +19,7 @@ function Button(props) {
             })
     }
 
-    // function checkValid (data) {
-    //         if (data.response !== success) {
-    //         let list = []
-    //         props.setList(list)
-    // }
-    // display(data)
-    // }
+
 
 
 
@@ -33,7 +27,8 @@ function Button(props) {
     function display(data) {
         let list = []
         let res = (data.results)
-        //collection of matching ids
+
+
         let searchList = res.map(item => {
             //convert string# to integer
             let int = parseInt(item.id)

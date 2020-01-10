@@ -74,7 +74,7 @@ Change the Opacity at the top to be closer to white or nav bar has color of whit
 
 [Hero Page](https://res.cloudinary.com/dt5zs08ue/image/upload/v1578319410/GA%20project%202/wireframes_mockups_1_etblon.png)
 
-[React Architecture](https://res.cloudinary.com/dt5zs08ue/image/upload/v1578319841/GA%20project%202/Untitled_2_jsp6ku.png)
+[Youtube](https://youtu.be/RVCJHQEXQ5g)
 
 [Router Layout](https://docs.google.com/drawings/d/1FGeLe8REGUPs5DMqmKve7A0xI1Fhi1hu3nJzQf6ubrw/edit?usp=sharing)
 
@@ -105,13 +105,13 @@ Change the Opacity at the top to be closer to white or nav bar has color of whit
 |    Create components    |    1     |    .5 (hrs)    |       1       |    :---:    |
 |        API call         |    1     |     1 (hr)     |       1.5     |    :---:    |
 |      Render 1 hero      |    1     |    4 (hrs)     |       7       |    :---:    |
-|      Display heros      |    1     |     2 (hr)     |       4       |    :---:    |
+|      Display heros      |    1     |     2 (hr)     |       1       |    :---:    |
 |     Previous Button     |    1     |    .5 (hr)     |       2       |    :---:    |
 |       Next Button       |    1     |    .5 (hr)     |       2       |    :---:    |
 |     Display Page #      |    1     |     1 (hr)     |       1       |    :---:    |
 |     Search function     |    1     |    5 (hrs)     |       5       |    :---:    |
 |        Deployed         |    1     |    .5 (hr)     |       1.5     |    :---:    |
-|         Styled          |    1     |    8 (hrs)     |       6       |    :---:    |
+|         Styled          |    1     |    8 (hrs)     |       7       |    :---:    |
 |     Link and Route      |    1     |    4 (hrs)     |       5       |    :---:    |
 |  Changing header image  |    2     |    3 (hrs)     |       0       |    :---:    |
 |    Add Local Storage    |    2     |    3 (hrs)     |       0       |    :---:    |
@@ -119,7 +119,7 @@ Change the Opacity at the top to be closer to white or nav bar has color of whit
 | favorites button (home) |    3     |    3 (hrs)     |       0       |    :---:    |
 |    Display favorites    |    3     |    3 (hrs)     |       0       |    :---:    |
 |  show 1 favorite hero   |    3     |    3 (hrs)     |       0       |    :---:    |
-|       Total Time        |          |    44 (hrs)    |      37       |    :---:    |
+|       Total Time        |          |    44 (hrs)    |      39       |    :---:    |
 
 **Additional Libraries**
 
