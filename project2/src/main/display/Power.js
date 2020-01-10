@@ -23,7 +23,7 @@ function Power(props) {
             <h1>POWER STATS</h1>
 
             <ul>
-                <ol><h5>intelligence</h5>{}</ol>
+                <ol><h5>intelligence</h5>{props.power.intelligence}</ol>
 <ol><h5>strength</h5>{props.power.strength}</ol> 
 <ol><h5>speed</h5>{props.power.speed}</ol> 
 <ol><h5>durability</h5>{props.power.durability}</ol> 

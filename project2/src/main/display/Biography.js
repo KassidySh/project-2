@@ -4,14 +4,30 @@ import './MainHero.css';
 function Biography(props){
 //map through like with korrilla reciepts
 
-    let bio = props.bio
-    // console.log(bio)
-    return(
-        <div className='about'>
-            {/* <p>{this.bio.aliases[0]}</p> */}
-        <h2>Biography</h2>
-        </div>
+    if (props.bio !== undefined) {
+    let values = (Object.values(props.bio))
+    let keys = (Object.keys(props.bio))
+
+
+
+    let list = keys.map((item, index) => {
+
+        return (
+            <ol
+                key={index}
+            ><h5>{item}</h5>{values[index]}</ol>
+
+        )
+    })
+    return (<div> {list} </div>
+
     )
 }
+return (
+    <div></div>
+)
+    }
+
+
 
 export default Biography

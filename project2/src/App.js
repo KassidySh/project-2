@@ -5,7 +5,7 @@ import Results from './Results'
 import './App.css';
 import Hero from './main/display/Hero'
 import { BrowserRouter as Router } from 'react-router-dom';
-import {  Route, Switch, } from 'react-router-dom'
+import { Route, Switch, } from 'react-router-dom'
 
 
 
@@ -51,7 +51,7 @@ class App extends Component {
     }
 
     setId = (id) => {
-        
+
         this.setState({ id: id })
     }
 
@@ -72,28 +72,28 @@ class App extends Component {
                         setId={this.setId}
                     /> </main> */}
 
-                <Router >
-                    <Switch >
-                        <Route exact path='/'
-                            // component={Results}
-                            render={(props) => (
-                                <Results
-                                    list={this.state.list}
-                                    page={this.state.page}
-                                    setId={this.setId}
-                                />
-                            )}
-                        />
-                        <Route exact path='/Hero/:id'
-                            render={(props) => (
-                            <Hero
-                            id={this.state.id}
-/>                                 
-)}
-                        />
-                    </Switch>
-                </Router>
-</main>
+                    {/* <Router > */}
+                        <Switch >
+                            <Route exact path='/'
+                                // component={Results}
+                                render={({props}) => (
+                                    <Results
+                                        list={this.state.list}
+                                        page={this.state.page}
+                                        setId={this.setId}
+                                    />
+                                )}
+                            />
+                            <Route exact path='/Hero/:id'
+                                render={(props) => (
+                                    <Hero
+                                        id={this.state.id}
+                                    />
+                                )}
+                            />
+                        </Switch>
+                    {/* </Router> */}
+                </main>
                 <Footer
                     page={this.state.page}
                     nextPage={this.nextPage}

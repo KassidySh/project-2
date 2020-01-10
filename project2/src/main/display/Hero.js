@@ -5,12 +5,14 @@ import Work from './Work'
 import Image from './Image'
 import Biography from './Biography.js';
 import Header from './Header.js'
+import { Link } from 'react-router-dom'
 import './MainHero.css';
+
 
 
 function Hero(props) {
 
-console.log('this is id ', props.id)
+
     const [name, setName] = useState({
         name: ''
       })
@@ -38,6 +40,7 @@ console.log('this is id ', props.id)
       }, [])
     
       function State(data) {
+        
         setSuperBeing(data)
         setImg(data.image.url)
         setName(data.name)
@@ -49,8 +52,15 @@ console.log('this is id ', props.id)
 
 
     // console.log(superBeing)
+  if (superBeing !== null) {
+
     return (
-        <main>
+      <main
+>
+        <Link to='/' >
+<button>Back</button>
+        </Link>
+
         <Header
         name={superBeing.name}
         />
@@ -60,9 +70,9 @@ console.log('this is id ', props.id)
                 <Biography
         bio = {superBeing.biography}
         />
-        {/* <Image
+        <Image
         imgUrl={img}
-        /> */}
+        />
 
 
         <span className='bottom'>
@@ -76,6 +86,10 @@ console.log('this is id ', props.id)
         
         </main>
     )
+  }
+  return (
+    <div></div>
+  )
 }
 
 export default Hero
