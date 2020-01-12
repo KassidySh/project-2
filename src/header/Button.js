@@ -19,16 +19,14 @@ function Button(props) {
             })
     }
 
-
-
-
-
-
     function display(data) {
         let list = []
         let res = (data.results)
 
+        if (data.response !=='failure'){
 
+
+        
         let searchList = res.map(item => {
             //convert string# to integer
             let int = parseInt(item.id)
@@ -38,6 +36,13 @@ function Button(props) {
         props.setList(list)
 
     }
+    
+return(
+<div className='error'>This super is not in our database.</div>)}
+
+
+
+
     return (
         <div>
             <Link to='/' >
@@ -47,6 +52,7 @@ function Button(props) {
             </Link>
         </div>
     )
+
 }
 
 export default Button

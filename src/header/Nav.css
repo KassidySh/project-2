@@ -35,7 +35,10 @@ input {
     width: 60px;
     border-radius: 50%;
 }
+.error{ 
 
+background-color: aqua;
+}
 @media (max-width:425px) {
 
 nav {
